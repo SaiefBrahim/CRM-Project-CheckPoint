@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM - Login</title>
+  <link rel="stylesheet" href="/css/signin.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/be3487ad83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="signin">
+    <div class="logo">
+      <div class="not" id="not"><i class="fa-solid fa-xmark"></i> Email Adress and Password are Incorrect</div>
+      <h1 class="logocrm">CRM</h1>
+      <h1 class="hint1">Please sign in</h1>
+    </div>
+    <div class="inputs">
+      <div class="form__group field">
+        <input class="form__field" type="email" name="emailinput" id="email" placeholder="Email Adress">
+        <label for="email" class="form__label">Email Adress</label>
+      </div>
+      <div class="form__group field">
+        <input class="form__field" type="password" name="passinput" id="password" placeholder="Password">
+        <label for="password" class="form__label">Password</label>
+      </div>
+      <div class="hint2">
+        <label style>
+        <input type="checkbox" name="reminput" id="rem" checked style>
+        Remember me
+        </label>
+      </div>
+    </div>
+    <div class="submit">
+      <button id="submit">Sign in</button>
+    </div>
+    <div class="hint3">
+      <p id="h3h1">Please Use these credentials for demo purposes</p>
+      <p>Email: demo@demo.com</p>
+      <p>Password: pass</p>
+    </div>
+  </div>
+  <div class="footer">
+    &copy 2022 SAIEF BRAHIM. All rights are reserved. 
+  </div>
+  <script src="/js/signin.js"></script>
+</body>
+</html>
