@@ -1,46 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM - Dashbord</title>
-    <link rel="stylesheet" href="/css/recep.css">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/be3487ad83.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/recep.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/be3487ad83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="inner">
-    
-    <nav>
+      <nav>
         <div class="topbar">
-            <ul class="ultop">
-                <a id="clogocrm" href="/dashboard.html"><h1 id="logocrm">CRM</h1></a>
-                <a><li id="dark"><i class="fa-solid fa-moon fa-xl"></i></li></a>
-                <a id="accc"><li id="acc">Account
-                    <ul class="accli">
-                        <a href="#"><li>Logout</li></a>
-                    </ul>
-                </li></a>
-            </ul>
+          <ul class="ultop">
+            <a id="clogocrm" href="/dashboard.html"
+              ><h1 id="logocrm">CRM</h1></a
+            >
+            <a
+              ><li id="dark"><i class="fa-solid fa-moon fa-xl"></i></li
+            ></a>
+            <a id="accc"
+              ><li id="acc">
+                Account
+                <ul class="accli">
+                  <a id="logout" href="#"><li>Logout</li></a>
+                </ul>
+              </li></a
+            >
+          </ul>
         </div>
         <div class="sidebar">
-                <a class="barlinks" href="/dashboard.html">Dashbord</a>
-                <hr class="sidebarhr">
-                <a id="active" class="barlinks" href="/reception.html">Reception</a>
-                <hr class="sidebarhr">
-                <a class="barlinks" href="/repairprocess.html">Repair Process</a>
-                <hr class="sidebarhr">
-                <a class="barlinkss" href="/jobreport.html">Job Report</a>
-                <hr class="sidebarhr">
+          <a class="barlinks" href="/dashboard.html">Dashbord</a>
+          <hr class="sidebarhr" />
+          <a id="active" class="barlinks" href="/reception.html">Reception</a>
+          <hr class="sidebarhr" />
+          <a class="barlinks" href="/repairprocess.html">Repair Process</a>
+          <hr class="sidebarhr" />
+          <a class="barlinkss" href="/jobreport.html">Job Report</a>
+          <hr class="sidebarhr" />
         </div>
-    </nav>
+      </nav>
+      <main>
+        <div class="not" id="not"><i class="fa-solid fa-xmark"></i></div>
+        <button class="btn" id="add">Add JobSheet</button>
+        <p id="hint4">Fill The Job Credentials</p>
 
-    <main>
+        <div class="form" id="form">
+          <div class="device">
+            <div class="col">
+              <label for="imeisn">IMEI/SN: </label>
+              <input type="number" maxlength="15" id="imei" required />
+            </div>
+
+            <div class="col">
+              <label for="mod">Model: </label>
+              <select name="mod" id="model">
+                <option>Infinix Zero 8</option>
+                <option>Infinix Smart 5</option>
+                <option>Infinix Smart 6</option>
+                <option>Infinix Note 8</option>
+                <option>Infinix Hot 11</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="condition">Condition: </label>
+              <input
+                class="radio"
+                type="radio"
+                name="condition"
+                id="fair"
+                value="fair"
+                required
+              />
+              <label class="radio" for="fair">Fair</label>
+              <input
+                class="radio"
+                type="radio"
+                name="condition"
+                id="damaged"
+                value="damaged"
+                required
+              />
+              <label class="radio" for="damaged">Damaged</label>
+            </div>
+            <div class="col" id="sta">
+              <label class="status" for="status">Status: </label>
+              <input type="text" id="warranty" disabled />
+            </div>
+          </div>
+          <div class="customer">
+            <div class="col">
+              <label for="cusname">Customer Name: </label>
+              <input type="text" id="cname" required />
+            </div>
+            <div class="col">
+              <label for="Phone Number">Phone Number: </label>
+              <input type="tel" maxlength="8" id="pnumber" required />
+            </div>
+            <div class="col">
+              <label for="country">Country: </label>
+              <select name="country" id="country">
+                <option value="tunisia">Tunisia</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="adress">Address: </label>
+              <input type="text" id="address" required />
+            </div>
+          </div>
+        </div>
+        <div id="sub">
+          <button class="btn" id="submit">Submit</button>
+        </div>
 
 
-    </main>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Job Number</th>
+                <th>Model</th>
+                <th>IMEI</th>
+                <th>Status</th>
+                <th>Customer</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table id="table" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>JN2022-3</td>
+                <td>Infinix Note 8</td>
+                <td>351270218653014</td>
+                <td>Warranty</td>
+                <td>Ahmed Zarrouk</td>
+              </tr>
+              <tr>
+                <td>JN2022-2</td>
+                <td>Infinix Zero 8</td>
+                <td>358270292653072</td>
+                <td>Warranty</td>
+                <td>Amin Abdedayem</td>
+              </tr>
+              <tr>
+                <td>JN2022-1</td>
+                <td>Infinix Hot 11</td>
+                <td>357770238659038</td>
+                <td>Out of Warranty</td>
+                <td>Imen Trabelsi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
-</body>
+    <script src="/js/recep.js"></script>
+  </body>
 </html>

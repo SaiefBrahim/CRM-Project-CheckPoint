@@ -1,112 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM - Dashbord</title>
-    <link rel="stylesheet" href="/css/dash.css">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/be3487ad83.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/dash.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/be3487ad83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
     <div id="inner">
-    
-    <nav>
+      <nav>
         <div class="topbar">
-            <ul class="ultop">
-                <a id="clogocrm" href="/dashboard.html"><h1 id="logocrm">CRM</h1></a>
-                <a><li id="dark"><i class="fa-solid fa-moon fa-xl"></i></li></a>
-                <a id="accc"><li id="acc">Account
-                    <ul class="accli">
-                        <a href="#"><li>Logout</li></a>
-                    </ul>
-                </li></a>
-            </ul>
+          <ul class="ultop">
+            <a id="clogocrm" href="/dashboard.html"
+              ><h1 id="logocrm">CRM</h1></a
+            >
+            <a>
+              <li id="dark"><i class="fa-solid fa-moon fa-xl"></i></li
+            ></a>
+            <a id="accc"
+              ><li id="acc">
+                Account
+                <ul class="accli">
+                  <a id="logout" href="#"><li>Logout</li></a>
+                </ul>
+              </li></a
+            >
+          </ul>
         </div>
         <div class="sidebar">
-                <a id="active" class="barlinks" href="/dashboard.html">Dashbord</a>
-                <hr class="sidebarhr">
-                <a class="barlinks" href="/reception.html">Reception</a>
-                <hr class="sidebarhr">
-                <a class="barlinks" href="/repairprocess.html">Repair Process</a>
-                <hr class="sidebarhr">
-                <a class="barlinkss" href="/jobreport.html">Job Report</a>
-                <hr class="sidebarhr">
+          <a id="active" class="barlinks" href="/dashboard.html">Dashbord</a>
+          <hr class="sidebarhr" />
+          <a class="barlinks" href="/reception.html">Reception</a>
+          <hr class="sidebarhr" />
+          <a class="barlinks" href="/repairprocess.html">Repair Process</a>
+          <hr class="sidebarhr" />
+          <a class="barlinkss" href="/jobreport.html">Job Report</a>
+          <hr class="sidebarhr" />
         </div>
-    </nav>
+      </nav>
 
-    <main>
+      <main>
         <div class="nots">
-                <a href="/reception.html" class="noty">
-                    <div class="notification">
-                        <i class="fa-solid fa-inbox fa-3x"></i>
-                        <span id="tbr">3</span>
-                    </div>
-                    <div class="desc">Carried In
-                    </div>
-                </a>
+          <a href="/reception.html" class="noty">
+            <div class="notification">
+              <i class="fa-solid fa-inbox fa-3x"></i>
+              <span id="tbr">3</span>
+            </div>
+            <div class="desc">Carried In</div>
+          </a>
 
-                <a href="/repairprocess.html" class="noty">
-                    <div class="notification">
-                        <i class="fa-solid fa-screwdriver fa-3x"></i>
-                        <span id="tbr">3</span>
-                    </div>
-                    <div class="desc">To be Repaired
-                    </div>
-                </a>
+          <a href="/repairprocess.html" class="noty">
+            <div class="notification">
+              <i class="fa-solid fa-screwdriver fa-3x"></i>
+              <span id="tbr">3</span>
+            </div>
+            <div class="desc">To be Repaired</div>
+          </a>
 
-                <a href="/jobreport.html" class="noty">
-                    <div class="notification">
-                        <i class="fa-solid fa-check-double fa-3x"></i>
-                        <span id="tbr">7</span>
-                    </div>
-                    <div class="desc">Repaired
-                    </div>
-                </a>
+          <a href="/jobreport.html" class="noty">
+            <div class="notification">
+              <i class="fa-solid fa-check-double fa-3x"></i>
+              <span id="tbr">7</span>
+            </div>
+            <div class="desc">Repaired</div>
+          </a>
         </div>
 
         <div class="dashy">
-
-            <div class="instructions">
-                <div class="hinst">
-                    <p>Instructions</p>
-                </div>
-                <div class="cinst">
-                    <div id="pp">
-                        <div id="hin">Reception :</div>
-                        To record both customer and device informations.
-                        <div id="hin">Repair Process :</div>
-                        To record device problems and the repair solutions.
-                        <div id="hin">Job report :</div>
-                        To inspect history of devices using filters.  
-                     </div>
-                </div>
+          <div class="instructions">
+            <div class="hinst">
+              <p>Instructions</p>
             </div>
-
-            <div class="instructions">
-                <div class="hinst">
-                    <p>Warranty Conditions</p>
-                </div>
-                <div class="cinst">
-                    <div id="ppp">
-                        <div id="hin">Limited warranty period:</div>
-                        Smartphone : 365 Days. <br>
-                        Built-in Battery : Follow the device. <br>
-                        External Battery : 6 Months. <br>
-                        Charger (inbox) : 6 Months. <br>
-                        Cable (inbox) : 6 Months. <br>
-                        Headset (inbox) : 6 Months.
-
-                        
-                     </div>
-                </div>
+            <div class="cinst">
+              <div id="pp">
+                <div id="hin">Reception :</div>
+                To record both customer and device informations.
+                <div id="hin">Repair Process :</div>
+                To record device problems and the repair solutions.
+                <div id="hin">Job report :</div>
+                To inspect history of devices using filters.
+              </div>
             </div>
+          </div>
 
+          <div class="instructions">
+            <div class="hinst">
+              <p>Warranty Conditions</p>
+            </div>
+            <div class="cinst">
+              <div id="ppp">
+                <div id="hin">Limited warranty period:</div>
+                Smartphone : 365 Days. <br />
+                Built-in Battery : Follow the device. <br />
+                External Battery : 6 Months. <br />
+                Charger (inbox) : 6 Months. <br />
+                Cable (inbox) : 6 Months. <br />
+                Headset (inbox) : 6 Months.
+              </div>
+            </div>
+          </div>
         </div>
-        
-    </main>
+      </main>
     </div>
-</body>
+    <script src="/js/dash.js"></script>
+    
+  </body>
 </html>

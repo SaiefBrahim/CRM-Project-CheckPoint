@@ -1,147 +1,344 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 /* menus start */
 
-nav{
-    display: flex;
-    flex-direction: column;
-    
+nav {
+  display: flex;
+  flex-direction: column;
 }
-.ultop{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end ;
-    background-color: #2c3039;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position:fixed;
-    height: 55px;
-    z-index: 1;
+.ultop {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2c3039;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  z-index: 1;
 }
-.ultop li{
-    padding: 15px 15px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    
+.ultop li {
+  padding: 15px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.ultop li:hover{
-    color: #CA2E55;
-    background-color: #fff;
-    border-radius: 6px 6px 0 0;
-
+.ultop li:hover {
+  color: #ca2e55;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
 }
-#logocrm{
-    font-family: 'Work sans', sans-serif;
-    font-size: 2.2rem;
-    color: #1A6FFF;
-    letter-spacing: 0.2rem;
-    margin: 0;
-    left: auto;
-    cursor: pointer;
-    /* text-align: center; */
-    padding: 7px 0 7px 16px;
+#logocrm {
+  font-family: "Work sans", sans-serif;
+  font-size: 2.2rem;
+  color: #1a6fff;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  left: auto;
+  cursor: pointer;
+  /* text-align: center; */
+  padding: 7px 0 7px 16px;
 }
-#logocrm:hover{
-    background-color: #06131b;
-    border-radius: 0 6px 0 0;
-
+#logocrm:hover {
+  background-color: #06131b;
+  border-radius: 0 6px 0 0;
 }
-#clogocrm{
-    margin-right: auto;
-    text-decoration: none;
-    width: 240px;
-    height: 55px;
+#clogocrm {
+  margin-right: auto;
+  text-decoration: none;
+  width: 240px;
+  height: 55px;
 }
-#dark{
-    cursor: pointer;
+#dark {
+  cursor: pointer;
 }
-.accli{
-    list-style: none;
-    display:none;
-    position: absolute;
-    right: 20px;
-    width: 90px;
-    height: 30px;
-    background-color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    border-radius: 4px;
+.accli {
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: 20px;
+  width: 90px;
+  height: 30px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 4px;
 }
-#acc:hover{
-    cursor:default;
+#acc:hover {
+  cursor: default;
 }
-#acc:hover .accli{
-    display: flex;
-    justify-items: center;
-    height: auto;
-    width: auto;
-    padding: 0;
-    top: 55px;
-    
+#acc:hover .accli {
+  display: flex;
+  justify-items: center;
+  height: auto;
+  width: auto;
+  padding: 0;
+  top: 55px;
 }
-.accli li:hover{
-    background-color: #CA2E55;
-    color: #fff;
+.accli li:hover {
+  background-color: #ca2e55;
+  color: #fff;
 }
-.accli li{
-    color: #000;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 1.1rem;
-    padding: 10px 22px;
-    font-weight: 500;
+.accli li {
+  color: #000;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px 22px;
+  font-weight: 500;
 }
-.accli a{
-    border-radius: 4px;
-    text-decoration: none;
+.accli a {
+  border-radius: 4px;
+  text-decoration: none;
 }
-.accli li:hover{
-    color: #fff;
-    border-radius: 0 0 6px 6px;
+.accli li:hover {
+  color: #fff;
+  border-radius: 0 0 6px 6px;
 }
-#acc{
-    margin-right: 20px;
+#acc {
+  margin-right: 20px;
 }
 
-.sidebar{
-    margin-top: 55px;
-    padding: 0;
-    width: 240px;
-    background-color:#2c3039;
-    position: fixed;
-    height: 100%;
+.sidebar {
+  margin-top: 55px;
+  padding: 0;
+  width: 240px;
+  background-color: #2c3039;
+  position: fixed;
+  height: 100%;
 }
-.sidebar a{
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    padding: 16px;
-    text-decoration: none;  
-    font-size: 1.2rem;
-    font-weight: 500;
+.sidebar a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.sidebar a:hover:not(#active){
-        background-color: #fff;
-        color: #CA2E55;
+.sidebar a:hover:not(#active) {
+  background-color: #fff;
+  color: #ca2e55;
 }
-.sidebar #active{
-    background-color: #fff;
-    color:#CA2E55;
-}
-
-.sidebarhr{
-    margin: 0;
-    background-color: #fff;
-    height: 1px;
-    border: none;
+.sidebar #active {
+  background-color: #fff;
+  color: #ca2e55;
 }
 
-main{
-    margin: 95px 0 0 240px;
+.sidebarhr {
+  margin: 0;
+  background-color: #fff;
+  height: 1px;
+  border: none;
+}
+
+main {
+  margin: 95px 60px 0 280px;
+}
+
+.btn {
+  font-weight: 500;
+  backface-visibility: hidden;
+  background-color: #1a6fff;
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 40px;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+#sub{
+  display: none;
+  text-align: center;
+
+}
+#submit{
+  width: 160px;
+  margin-top: 30px;
+  margin-left: 42%;
+  font-size: 1.2rem;
+
+}
+#form{
+  display: none;
+  justify-content: space-around;
+  
+}
+.device{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-right: 50px;
+  
+}
+
+
+.customer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+  
+}
+.col{
+  padding: 20px 0;
+}
+label{
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 20px;
+  height: 60px;
+}
+
+select {
+  width: 200px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 9px;
+  border: unset;
+  background-color: #f1f1f1;
+  color: #000;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+  background-color: #3f5bd8;
+  color: #fff;
+}
+.radio{
+  width: 30px;
+  margin: 12px 0;
+  cursor: pointer;
+  
+}
+
+input {
+
+  width: 190px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 9px;
+  border: unset;
+  background-color: #f1f1f1;
+  color: #000;
+  transition: background 0.5s;
+}
+input:focus {
+  outline: none;
+  background-color: #3f5bd8;
+  color: #fff;
+}
+input:focus::placeholder {
+  color: #000;
+}
+input:disabled{
+  background-color: #a3a3a3;
+}
+
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  margin-top: 40px;
+  background-color: #2c3039;
+  border-radius: 9px;
+ }
+.tbl-content{
+  height:auto;
+  overflow-x:auto;
+  margin-bottom: 50px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000;
+  border-bottom: solid 1px #2c3039;
+}
+#hint4{
+  display: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.not{
+  display: none;
+  background-color: #ECDBBA;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 0 29%;
+  padding: 1%;
+  text-align: center;
+  position: fixed;
+  animation-name: notification;
+  animation-duration: 5s;
+  opacity: 0;
+
+}
+@keyframes notification {
+  0%   {opacity:0;}
+  25%  {opacity:1;}
+  50%  {opacity:1;}
+  75%  {opacity:1;}
+  100% {opacity:0;}
+  
 }
