@@ -150,7 +150,7 @@ main {
 
 .nots {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .noty {
   display: flex;
@@ -189,7 +189,7 @@ main {
 
 .dashy {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 70px;
 }
 .instructions {

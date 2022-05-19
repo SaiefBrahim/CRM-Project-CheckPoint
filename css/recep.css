@@ -232,7 +232,6 @@ label{
   padding-right: 20px;
   height: 60px;
 }
-
 select {
   width: 200px;
   padding: 8px;
@@ -255,9 +254,7 @@ select:focus {
   cursor: pointer;
   
 }
-
 input {
-
   width: 190px;
   padding: 8px;
   font-size: 1rem;
@@ -278,8 +275,6 @@ input:focus::placeholder {
 input:disabled{
   background-color: #a3a3a3;
 }
-
-
 table{
   width:100%;
   table-layout: fixed;
@@ -318,7 +313,6 @@ td{
   font-weight: 500;
   text-decoration: underline;
 }
-
 .not{
   display: none;
   background-color: #ECDBBA;
